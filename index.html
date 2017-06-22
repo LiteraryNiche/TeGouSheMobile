@@ -1,0 +1,826 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--解决uc浏览器字体变大的问题-->
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>特购社手机站</title>
+<link href="favico.ico" rel="shortcut icon">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/bass.css" rel="stylesheet" type="text/css">
+<link href="css/idangerous.swiper.css" rel="stylesheet" type="text/css">
+<script src="js/TouchSlide.1.1.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+  	$(".close").click(function(){
+    $(".tc_ceng").hide();
+	$(".mask").hide();
+  });
+  
+});
+
+</script>
+</head>
+
+<body>
+<!--弹出层效果-->
+<div class="tc_ceng"> <a href="#" class="close"></a> </div>
+<div class="mask"></div>
+<!--弹出层结束-->
+
+<div class="wrap">
+<div class="header fl">
+	<div class="classify fl"><a href="#"><img src="images/fenlei.png" style='width:0.8rem; height:0.8rem;'></a></div>	
+	<div class="header_logo fl"><a href="#"><img src="images/logo_03.png" style='width:3rem; height:1rem;'></a></div>
+    <div class="header_gouwudai fr"><a href="#"><img src="images/gwd.png" style='width:1.12rem; height:1.12rem;'></a></div>
+	<div class="header_sousuo fr"><a href="#"><img src="images/sousuo.png" style='width:1.12rem; height:1.12rem;'></a></div>  
+</div>
+<div class="clear">::after</div>
+<!--轮播-->
+<div class="carousel">
+<div id="slideBox" class="slideBox">
+
+		<div class="bd">
+			<ul>
+					<li>
+						<a class="pic" href="#"><img src="images/banner1.jpg" /></a>
+					</li>
+					<li>
+						<a class="pic" href="#"><img src="images/banner2.jpg"/></a>
+					</li>
+					<li>
+						<a class="pic" href="#"><img src="images/banner3.jpg"/></a>
+					</li>
+					<li>
+						<a class="pic" href="#"><img src="images/banner4.jpg"/></a>
+					</li>
+                    <li>
+						<a class="pic" href="#"><img src="images/banner5.jpg"/></a>
+					</li>
+			</ul>
+		</div>
+
+		<div class="hd">
+			<ul></ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		TouchSlide({ 
+			slideCell:"#slideBox",
+			titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell:".bd ul", 
+			effect:"leftLoop", 
+			autoPage:true,//自动分页
+			autoPlay:true //自动播放
+		});
+	</script>
+
+</div>
+</div>
+<!--导航开始-->
+<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="images/1.png"><em>新品推荐</em></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/2.png"><em>出清频道</em></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/3.png"><em>澳洲直邮</em></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/4.png"><em>冷冻冷藏</em></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/5.png"><em>健康膳食</em></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/6.png"><em>健康饮品</em></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/7.png"><em>营养保健</em></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/8.png"><em>个人护理</em></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/9.png"><em>绿色家居</em></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/10.png"><em>环球特购</em></a></div>
+        </div>
+        <!-- Add Pagination -->
+       <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+     <script>
+    var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+    paginationClickable: true,
+    slidesPerView: 'auto',
+	spaceBetween : 20,
+	   
+    });
+   
+/*$(function(){
+	if($(".swiper-wrapper").css("transform translateX")<=-650){
+		$(".swiper-wrapper").css("transform translateX")==-450
+		}
+	
+	
+	});	*/
+	
+    </script>
+<!--<div class="nav">
+ 
+   <ul class="nav_list">
+                
+                <li>
+               
+                    <a href="#"><img src="images/1.png"><em>新品推荐</em></a>
+                   
+                </li>
+                <li>
+                  
+                        <a href="#"><img src="images/2.png"><em>出清频道</em></a>
+                   
+                </li>
+                <li>
+                    
+                        <a href="#"><img src="images/3.png"><em>澳洲直邮</em></a>
+                   
+                </li>
+                                    <li>
+                       
+                            <a href="#"><img src="images/4.png"><em>冷冻冷藏</em></a>
+                       
+                    </li>
+                                    <li>
+                       
+                            <a href="#"><img src="images/5.png"><em>健康膳食</em></a>
+                       
+                    </li>
+                                    <li>
+                       
+                            <a href="#"><img src="images/6.png"><em>健康饮品</em></a>
+                       
+                    </li>
+                                    <li>
+                        
+                            <a href="#"><img src="images/7.png"><em>营养保健</em></a>
+                       
+                    </li>
+                                    <li>
+                        
+                            <a href="#"><img src="images/8.png"><em>个人护理</em></a>
+                        
+                    </li>
+                                    <li>
+                        
+                            <a href="#"><img src="images/9.png"><em>绿色家居</em></a>
+                       
+                    </li>
+                                    <li >
+                       
+                            <a href="#"><img src="images/10.png"><em>环球特购</em></a>
+                       
+                    </li>
+                            </ul></div>
+  
+</div>-->
+
+<!--内容部分-->
+<!--第一部分内容-->
+<div class="content1">
+<div class="content1_title">
+<span>特讯信息</span>
+<em>新人有礼</em>
+<a href="#"><img src="images/img_gd.png"></a>
+</div>
+<div class="ads">
+<a href="javascript:;"><img src="images/in1.jpg"></a>
+<a href="javascript:;"><img src="images/in2.jpg"></a>
+<a href="javascript:;"><img src="images/in3.jpg"></a>
+<a href="javascript:;"><img src="images/in4.jpg"></a>
+</div>
+</div>
+<!--第二部分内容-->
+<div class="content2">
+<div class="miaosha">
+<p class="mstitle">
+<span>秒杀专区</span>
+</p>
+<p class="mstime" id="timer">
+                        <span>7</span>
+                        <em>天</em>
+                        <span>10</span>
+                        <em>时</em>
+                        <span>12</span>
+                        <em>分</em>
+                        <span class="weiyi">33</span>
+                        <em>秒</em>
+
+</p>
+</div>
+<div class="mslist">
+<a href="#" class="msimg"><img src="images/in5.jpg"></a>
+<div class="mscon">
+<p class="msp1"><a href="#">瀛七星越光米2kg</a></p>
+                <p class="msp2">米粒均匀透亮 口感腻滑爽口</p>
+                <p class="msp3"><span>秒杀价</span><em>￥</em><b>129.00</b></p>
+                     
+                     <p class="msp4">
+                         <span><b>27%</b>
+                             <em  style='width:1.08rem;border-radius: 0px;'>
+                             </em>
+                         </span> 
+                         <a href="javascript:void(0);">
+                            <img src="images/gwc.png">
+                         </a>
+                     </p>
+</div>
+</div>
+<div class="mslist">
+<a href="#" class="msimg"><img src="images/in6.jpg"></a>
+<div class="mscon">
+<p class="msp1"><a href="#">罗杰斯精选三文鱼段400g（每袋约2块）</a></p>
+                <p class="msp2">深海孕育 营养美味</p>
+                <p class="msp3"><span>秒杀价</span><em>￥</em><b>65.90</b></p>
+                     
+                     <p class="msp4">
+                         <span><b>14%</b>
+                             <em  style='width:0.56rem;border-radius: 0px;'>
+                             </em>
+                         </span> 
+                         <a href="javascript:void(0);">
+                            <img src="images/gwc.png">
+                         </a>
+                     </p>
+</div>
+</div>
+<div class="mslist">
+<a href="#" class="msimg"><img src="images/in7.jpg"></a>
+<div class="mscon">
+<p class="msp1"><a href="#">Propolinse比那氏蜂胶漱口水樱花版600ml</a></p>
+                <p class="msp2">一款温和清洁口腔的漱口水</p>
+                <p class="msp3"><span>秒杀价</span><em>￥</em><b>39.90</b></p>
+                     
+                     <p class="msp4">
+                         <span><b>14%</b>
+                             <em  style='width:0.56rem;border-radius: 0px;'>
+                             </em>
+                         </span> 
+                         <a href="javascript:void(0);">
+                            <img src="images/gwc.png">
+                         </a>
+                     </p>
+</div>
+</div>
+<div class="mslist">
+<a href="#" class="msimg"><img src="images/in8.jpg"></a>
+<div class="mscon">
+<p class="msp1"><a href="#">资生堂安热沙防晒露SPF50+/PA+++60ml</a></p>
+                <p class="msp2"></p>
+                <p class="msp3"><span>秒杀价</span><em>￥</em><b>209.00</b></p>
+                     
+                     <p class="msp4">
+                         <span><b>27%</b>
+                             <em  style='width:1.08rem;border-radius: 0px;'>
+                             </em>
+                         </span> 
+                         <a href="javascript:void(0);">
+                            <img src="images/gwc.png">
+                         </a>
+                     </p>
+</div>
+</div>
+</div>
+<script>
+var lefttime=96400;
+function freshTime()
+	{    
+	
+	 lefttime-=1;
+	
+       /* var endtime=new Date("2017/5/30,24:00:00");
+        var nowtime = new Date();
+        var lefttime=parseInt((endtime.getTime()-nowtime.getTime())/1000); */
+        d=  parseInt(lefttime/(24*60*60));
+		if(d<10){
+		d="0"+d;
+		}
+        h=  parseInt(lefttime/(60*60)%24);
+		if(h<10){
+		h='0'+h;
+		}
+        m=  parseInt(lefttime/60%60);
+		if(m<10){
+		m='0'+m;
+		}
+        s= parseInt(lefttime%60);
+		if(s<10){
+		s='0'+s;
+		}
+       	/*str_time="<span>"+d+"</span><em>天</em>"+"<span>"+h+"</span><em>时</em>"+"<span>"+m+"</span><em>分</em>"+"<span class='weiyi'>"+s+"</span><em>秒</em>";
+*/       
+       $("#timer").find("span").eq(0).html(d);
+	   $("#timer").find("span").eq(1).html(h);
+	   $("#timer").find("span").eq(2).html(m);
+	   $("#timer").find("span").eq(3).html(s);
+	   
+	   
+        /*document.getElementById("timer").innerHTML=str_time;*/
+        if(lefttime<=0){
+        document.getElementById("timer").innerHTML="闪购已结束";
+        clearInterval(sh);
+        }
+		var sh;
+   sh= setTimeout(freshTime,1000)  ;
+}
+   freshTime()
+   
+</script>
+<!--第二部分内容结束-->
+
+
+
+
+
+
+
+<!--<div class="content1">
+<div class="s1-tip">
+    <h2><span>今日闪购</span><em>-数量有限&nbsp;&nbsp;售完即止</em>
+    </h2>
+  </div>
+ <div class="content1_border">
+  <div class="content1_l"> <a href="#"><img src="images/1.jpg" alt=" Swanson斯旺森番茄红素20mg*60粒"></a>
+    </div>
+    <div class="content1_r">
+     <span class="wz1"><a href="#">[美国] Swanson斯旺森番茄红素20mg*60粒</a></span> 
+    <span class="wz2">
+      <div class="wz2-t"> <b>特惠</b>超值特惠</div>
+      <em class="wz2-m" style="text-decoration:line-through">￥159.00</em>
+      <p class="wz2-b">￥129.00</p>
+      </span> 
+      <span class="wz3">每粒番茄红素相当于400个小番茄，小小一粒，大大能量。</span> 
+      </div>
+      </div>
+</div>-->
+<!--第二部分内容-->
+<!--<div class="content2">
+ <div class="content2_border">
+  <div class="content2_l"> <a href="#"><img src="images/2.jpg" alt=" Swanson斯旺森番茄红素20mg*60粒"></a>
+    </div>
+    <div class="content2_r">
+     <span class="wz1"><a href="#">[新西兰] 澳洲直邮 组合装 Swisse女士复合维生素120粒+男士复合维生素120粒</a></span> 
+    <span class="wz2">
+      <div class="wz2-t"> <b>特惠</b>超值特惠</div>
+      <em class="wz2-m" style="text-decoration:line-through">￥399.00</em>
+      <p class="wz2-b">￥325.00</p>
+      </span> 
+      <span class="wz3">补充维生素也有大学问，男女不同要区分，组合装一次搞定！</span> 
+      </div>
+      </div>
+      <div class="look">
+                <a href="#">去逛逛</a>
+            </div>
+
+</div>-->
+
+<!--第三部分内容-->
+<div class="content3">
+  <div class="s3-tip">
+    <span>冷冻冷藏</span>
+  </div>
+  <div class="s3-top">
+    <div class="s3-top-pic"><a href="#" target="_blank"><img src="images/3.jpg"></a></div>
+  </div>
+  <div class="s3-content">
+    <ul>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="s3-content-bot"> <span class="s3-nprice">￥218.00</span>
+          <p class="s3-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/18.jpg"></a> <strong> <a target="_blank" href="#">[格陵兰] 【新品推荐】罗杰斯格陵兰冻比目鱼500g</a></strong>
+      
+        <div class="s3-content-bot"> <span class="s3-nprice">￥79.90</span>
+          <p class="s3-sprice">￥76.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/19.jpg"></a> <strong> <a target="_blank" href="#">[越南] 罗杰斯精选龙利鱼（巴沙鱼片）约1.4kg左右</a></strong>
+       
+        <div class="s3-content-bot"> <span class="s3-nprice">￥78.50</span>
+          <p class="s3-sprice">￥76.50<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="s3-content-bot"> <span class="s3-nprice">￥108.00</span>
+          <p class="s3-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/21.jpg"></a><i></i> <strong> <a target="_blank" href="#">[智利] 罗杰斯精选三文鱼段400g（每袋约2块）</a></strong>
+        
+        <div class="s3-content-bot"> <span class="s3-nprice">￥89.90</span>
+          <p class="s3-sprice">￥87.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/22.jpg"></a><i></i> <strong> <a target="_blank" href="#">[澳大利亚] 罗杰斯精选谷饲牛腩500g（整块装）</a></strong>
+        
+        <div class="s3-content-bot"> <span class="s3-nprice">￥56.50</span>
+          <p class="s3-sprice">￥54.90<em>最低可达</em></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="look">
+                <a href="#">去逛逛</a>
+            </div>
+
+</div>
+
+
+
+<!--第四部分开始-->
+<div class="content4">
+<div class="s4-tip">
+    <span>健康膳食</span>
+  </div>
+
+    <ul class="s4-pic">
+    <li> <a href="#" target="_blank"><img src="images/4.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/16.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/5.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/6.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/7.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/8.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/9.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/10.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/11.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/12.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/13.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/14.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/15.jpg"></a></li>
+    </ul>
+   <div class="s4-content">
+    <ul>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="s4-content-bot"> <span class="s4-nprice">￥218.00</span>
+          <p class="s4-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/18.jpg"></a> <strong> <a target="_blank" href="#">[格陵兰] 【新品推荐】罗杰斯格陵兰冻比目鱼500g</a></strong>
+      
+        <div class="s4-content-bot"> <span class="s4-nprice">￥79.90</span>
+          <p class="s4-sprice">￥76.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/19.jpg"></a> <strong> <a target="_blank" href="#">[越南] 罗杰斯精选龙利鱼（巴沙鱼片）约1.4kg左右</a></strong>
+       
+        <div class="s4-content-bot"> <span class="s4-nprice">￥78.50</span>
+          <p class="s4-sprice">￥76.50<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="s4-content-bot"> <span class="s4-nprice">￥108.00</span>
+          <p class="s4-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/21.jpg"></a><i></i> <strong> <a target="_blank" href="#">[智利] 罗杰斯精选三文鱼段400g（每袋约2块）</a></strong>
+        
+        <div class="s4-content-bot"> <span class="s4-nprice">￥89.90</span>
+          <p class="s4-sprice">￥87.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/22.jpg"></a><i></i> <strong> <a target="_blank" href="#">[澳大利亚] 罗杰斯精选谷饲牛腩500g（整块装）</a></strong>
+        
+        <div class="s4-content-bot"> <span class="s4-nprice">￥56.50</span>
+          <p class="s4-sprice">￥54.90<em>最低可达</em></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="look">
+                <a href="#">去逛逛</a>
+            </div>
+
+</div>
+
+
+<!--第五部分开始-->
+<div class="content5">
+<div class="s5-tip">
+    <span>健康饮品</span>
+  </div>
+
+    <ul class="s5-pic">
+    <li> <a href="#" target="_blank"><img src="images/11.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/12.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/13.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/14.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/15.jpg"></a></li>
+    </ul>
+   <div class="s5-content">
+    <ul>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="s5-content-bot"> <span class="s5-nprice">￥218.00</span>
+          <p class="s5-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/18.jpg"></a> <strong> <a target="_blank" href="#">[格陵兰] 【新品推荐】罗杰斯格陵兰冻比目鱼500g</a></strong>
+      
+        <div class="s5-content-bot"> <span class="s5-nprice">￥79.90</span>
+          <p class="s5-sprice">￥76.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/19.jpg"></a> <strong> <a target="_blank" href="#">[越南] 罗杰斯精选龙利鱼（巴沙鱼片）约1.4kg左右</a></strong>
+       
+        <div class="s5-content-bot"> <span class="s5-nprice">￥78.50</span>
+          <p class="s5-sprice">￥76.50<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="s5-content-bot"> <span class="s5-nprice">￥108.00</span>
+          <p class="s5-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="s5-content-bot"> <span class="s5-nprice">￥108.00</span>
+          <p class="s5-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="s5-content-bot"> <span class="s5-nprice">￥108.00</span>
+          <p class="s5-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="look">
+                <a href="#">去逛逛</a>
+            </div>
+
+</div>
+
+<!--第六部分开始-->
+<div class="content6">
+<div class="s6-tip">
+    <span>营养保健</span>
+  </div>
+
+    <ul class="s6-pic">
+    <li> <a href="#" target="_blank"><img src="images/4.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/16.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/5.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/6.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/7.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/8.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/9.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/10.jpg"></a></li>
+    </ul>
+   <div class="s6-content">
+    <ul>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="s6-content-bot"> <span class="s6-nprice">￥218.00</span>
+          <p class="s6-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/18.jpg"></a> <strong> <a target="_blank" href="#">[格陵兰] 【新品推荐】罗杰斯格陵兰冻比目鱼500g</a></strong>
+      
+        <div class="s6-content-bot"> <span class="s6-nprice">￥79.90</span>
+          <p class="s6-sprice">￥76.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/19.jpg"></a> <strong> <a target="_blank" href="#">[越南] 罗杰斯精选龙利鱼（巴沙鱼片）约1.4kg左右</a></strong>
+       
+        <div class="s6-content-bot"> <span class="s6-nprice">￥78.50</span>
+          <p class="s6-sprice">￥76.50<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="s6-content-bot"> <span class="s6-nprice">￥108.00</span>
+          <p class="s6-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/21.jpg"></a><i></i> <strong> <a target="_blank" href="#">[智利] 罗杰斯精选三文鱼段400g（每袋约2块）</a></strong>
+        
+        <div class="s6-content-bot"> <span class="s6-nprice">￥89.90</span>
+          <p class="s6-sprice">￥87.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/22.jpg"></a><i></i> <strong> <a target="_blank" href="#">[澳大利亚] 罗杰斯精选谷饲牛腩500g（整块装）</a></strong>
+        
+        <div class="s6-content-bot"> <span class="s6-nprice">￥56.50</span>
+          <p class="s6-sprice">￥54.90<em>最低可达</em></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="look">
+                <a href="#">去逛逛</a>
+            </div>
+
+</div>
+
+<!--第七部分开始-->
+<div class="content7">
+<div class="s7-tip">
+    <span>个人护理</span>
+  </div>
+
+    <ul class="s7-pic">
+    <li> <a href="#" target="_blank"><img src="images/4.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/16.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/5.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/6.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/7.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/8.jpg"></a></li>
+    <li> <a href="#" target="_blank"><img src="images/9.jpg"></a></li>
+    </ul>
+   <div class="s7-content">
+    <ul>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="s7-content-bot"> <span class="s7-nprice">￥218.00</span>
+          <p class="s7-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/18.jpg"></a> <strong> <a target="_blank" href="#">[格陵兰] 【新品推荐】罗杰斯格陵兰冻比目鱼500g</a></strong>
+      
+        <div class="s7-content-bot"> <span class="s7-nprice">￥79.90</span>
+          <p class="s7-sprice">￥76.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/19.jpg"></a> <strong> <a target="_blank" href="#">[越南] 罗杰斯精选龙利鱼（巴沙鱼片）约1.4kg左右</a></strong>
+       
+        <div class="s7-content-bot"> <span class="s7-nprice">￥78.50</span>
+          <p class="s7-sprice">￥76.50<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="s7-content-bot"> <span class="s7-nprice">￥108.00</span>
+          <p class="s7-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/21.jpg"></a><i></i> <strong> <a target="_blank" href="#">[智利] 罗杰斯精选三文鱼段400g（每袋约2块）</a></strong>
+        
+        <div class="s7-content-bot"> <span class="s7-nprice">￥89.90</span>
+          <p class="s7-sprice">￥87.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/22.jpg"></a><i></i> <strong> <a target="_blank" href="#">[澳大利亚] 罗杰斯精选谷饲牛腩500g（整块装）</a></strong>
+        
+        <div class="s7-content-bot"> <span class="s7-nprice">￥56.50</span>
+          <p class="s7-sprice">￥54.90<em>最低可达</em></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="look">
+                <a href="#">去逛逛</a>
+            </div>
+
+</div>
+
+<!--第八部分内容-->
+<div class="content8">
+  <div class="s8-tip">
+    <span>绿色家居</span>
+  </div>
+  <div class="s8-top">
+    <div class="s8-top-pic"><a href="#" target="_blank"><img src="images/3.jpg"></a></div>
+  </div>
+  <div class="s8-content">
+    <ul>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="s8-content-bot"> <span class="s8-nprice">￥218.00</span>
+          <p class="s8-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/18.jpg"></a> <strong> <a target="_blank" href="#">[格陵兰] 【新品推荐】罗杰斯格陵兰冻比目鱼500g</a></strong>
+      
+        <div class="s8-content-bot"> <span class="s8-nprice">￥79.90</span>
+          <p class="s8-sprice">￥76.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/19.jpg"></a> <strong> <a target="_blank" href="#">[越南] 罗杰斯精选龙利鱼（巴沙鱼片）约1.4kg左右</a></strong>
+       
+        <div class="s8-content-bot"> <span class="s8-nprice">￥78.50</span>
+          <p class="s8-sprice">￥76.50<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="s8-content-bot"> <span class="s8-nprice">￥108.00</span>
+          <p class="s8-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/21.jpg"></a><i></i> <strong> <a target="_blank" href="#">[智利] 罗杰斯精选三文鱼段400g（每袋约2块）</a></strong>
+        
+        <div class="s8-content-bot"> <span class="s8-nprice">￥89.90</span>
+          <p class="s8-sprice">￥87.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/22.jpg"></a><i></i> <strong> <a target="_blank" href="#">[澳大利亚] 罗杰斯精选谷饲牛腩500g（整块装）</a></strong>
+        
+        <div class="s8-content-bot"> <span class="s8-nprice">￥56.50</span>
+          <p class="s8-sprice">￥54.90<em>最低可达</em></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="look">
+                <a href="#">去逛逛</a>
+            </div>
+
+</div>
+
+
+<!--第九部分内容-->
+<div class="content9">
+  <div class="s9-tip">
+    <span>环球特购</span>
+  </div>
+  <div class="s9-top">
+    <div class="s9-top-pic"><a href="#" target="_blank"><img src="images/3.jpg"></a></div>
+  </div>
+  <div class="s9-content">
+    <ul>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="s9-content-bot"> <span class="s9-nprice">￥218.00</span>
+          <p class="s9-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/18.jpg"></a> <strong> <a target="_blank" href="#">[格陵兰] 【新品推荐】罗杰斯格陵兰冻比目鱼500g</a></strong>
+      
+        <div class="s9-content-bot"> <span class="s9-nprice">￥79.90</span>
+          <p class="s9-sprice">￥76.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/19.jpg"></a> <strong> <a target="_blank" href="#">[越南] 罗杰斯精选龙利鱼（巴沙鱼片）约1.4kg左右</a></strong>
+       
+        <div class="s9-content-bot"> <span class="s9-nprice">￥78.50</span>
+          <p class="s9-sprice">￥76.50<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="s9-content-bot"> <span class="s9-nprice">￥108.00</span>
+          <p class="s9-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/21.jpg"></a><i></i> <strong> <a target="_blank" href="#">[智利] 罗杰斯精选三文鱼段400g（每袋约2块）</a></strong>
+        
+        <div class="s9-content-bot"> <span class="s9-nprice">￥89.90</span>
+          <p class="s9-sprice">￥87.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/22.jpg"></a><i></i> <strong> <a target="_blank" href="#">[澳大利亚] 罗杰斯精选谷饲牛腩500g（整块装）</a></strong>
+        
+        <div class="s9-content-bot"> <span class="s9-nprice">￥56.50</span>
+          <p class="s9-sprice">￥54.90<em>最低可达</em></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="look">
+                <a href="#">去逛逛</a>
+            </div>
+
+</div>
+<!--底部内容-->
+<div class="footer">
+<div class="footer_top">
+<span class="login"><a href="login.html">登录</a></span>
+<span class="register"><a href="register.html">注册</a></span>
+<span class="back"><a href="javascript:;">返回顶部</a></span>
+</div>
+<script>
+$(function(){
+	$(".back").click(function(){
+		var speed=500;
+		$('body,html').animate({scrollTop: 0}, speed);
+        return false;
+		});
+	
+	});
+
+</script>
+<div class="footer_bottom">
+<p>Copyright &copy; 2017 tegoushe.com<br>京ICP证150211号</p>
+</div>
+</div>
+
+</body>
+</html>

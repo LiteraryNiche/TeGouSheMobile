@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta charset="utf-8">
+<!--解决uc浏览器字体变大的问题-->
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>特购社触屏版</title>
+<link href="favico.ico" rel="shortcut icon">
+<link href="css/g_list.css" rel="stylesheet" type="text/css">
+<link href="css/bass.css" rel="stylesheet" type="text/css">
+<link href="css/other.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+<!--遮罩层开始-->
+<div class="mask"></div>
+<!--遮罩层结束-->
+<div class="wrap">
+<div class="header fl">
+	<div class="classify fl"><a href="#"><img src="images/fenlei.png" style='width:0.8rem; height:0.8rem;'></a></div>	
+	<div class="header_logo fl"><a href="#"><img src="images/logo_03.png" style='width:3rem; height:1rem;'></a></div>
+    <div class="header_gouwudai fr"><a href="#"><img src="images/gwd.png" style='width:1.12rem; height:1.12rem;'></a></div>
+	<div class="header_sousuo fr"><a href="#"><img src="images/sousuo.png" style='width:1.12rem; height:1.12rem;'></a></div>  
+</div>
+</div>
+<div class="clear"></div>
+
+
+<!--导航栏开始-->
+<div class="nav_box">
+
+<!--菜单列表-->
+<div class="list">
+<div class="list_top">
+<div class="fenlei">
+<p><strong>分类：</strong><span>全部</span><img src="images/qi_img_07.png"></p>
+</div>
+<div class="paixu">
+<p><i>排序：</i><em>默认</em><img src="images/qi_img_07.png"></p>
+</div>
+</div>
+<ol class="ol_l">
+<li class="current"><a href="#">全部</a></li>
+<li ><a href="javascript:;">冷冻水产</a></li>
+<li ><a href="javascript:;">冷冻肉</a></li>
+<li ><a href="javascript:;">冷冻半成品</a></li>
+</ol>
+
+<ol class="ol_r">
+<li class="active"><a href="#">默认</a></li>
+<li ><a href="javascript:;">销量最高</a></li>
+<li><a href="javascript:;">价格最高</a></li>
+<li ><a href="javascript:;">价格最低</a></li>
+<li ><a href="javascript:;">最新上架</a></li>
+</ol>
+</div>
+<script>
+$(document).ready(function(){
+    $(".ol_l li").click(function(){
+		$(this).attr("class","current").siblings().removeAttr("class");
+		
+		});
+});
+$(document).ready(function(){
+    $(".ol_r li").click(function(){
+		$(this).attr("class","active").siblings().removeAttr("class");
+		
+		});
+});
+
+
+</script>
+
+
+
+<!--内容区-->
+<div class="goods">
+   <div class="goods-content">
+    <ul>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/18.jpg"></a> <strong> <a target="_blank" href="#">[格陵兰] 【新品推荐】罗杰斯格陵兰冻比目鱼500g</a></strong>
+      
+        <div class="goods-content-bot"> <span class="goods-nprice">￥79.90</span>
+          <p class="goods-sprice">￥76.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/19.jpg"></a> <strong> <a target="_blank" href="#">[越南] 罗杰斯精选龙利鱼（巴沙鱼片）约1.4kg左右</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥78.50</span>
+          <p class="goods-sprice">￥76.50<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="goods-content-bot"> <span class="goods-nprice">￥108.00</span>
+          <p class="goods-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/21.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="goods-content-bot"> <span class="goods-nprice">￥108.00</span>
+          <p class="goods-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/19.jpg"></a> <strong> <a target="_blank" href="#">[越南] 罗杰斯精选龙利鱼（巴沙鱼片）约1.4kg左右</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥78.50</span>
+          <p class="goods-sprice">￥76.50<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="goods-content-bot"> <span class="goods-nprice">￥108.00</span>
+          <p class="goods-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/21.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="goods-content-bot"> <span class="goods-nprice">￥108.00</span>
+          <p class="goods-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<!--内容区结束-->
+</div>
+<script>
+$(document).ready(function(){
+			$(".fenlei").click(function(){
+				if($(".ol_l").css("display")=="none"){
+					$(".ol_l").css("display","block");
+					}else{
+						$(".ol_l").css("display","none");
+						}
+						$(".ol_r").css("display","none");
+			$('html,body').addClass('ovfHiden');			
+				});
+				
+			$(".paixu").click(function(){
+				if($(".ol_r").css("display")=="none"){
+					$(".ol_r").css("display","block");
+					}else{
+						$(".ol_r").css("display","none");
+						}
+						$(".ol_l").css("display","none");
+				});
+				
+			});
+
+
+</script>
+<script>
+$(document).ready(function(){
+	$(".list").click(function(){
+		if($(".ol_l").css("display")=="none"&&$(".ol_r").css("display")=="none"){
+			$(".mask").css("display","none");
+			}else {
+				$(".mask").css("display","block");
+				}		
+		});	
+	});
+
+</script>
+<script>
+$(document).ready(function(){
+	$(".mask").click(function(){
+		
+		$(".mask").css("display","none");
+					
+		});	
+	});
+
+</script>
+
+
+<!--底部开始-->
+<div class="footer">
+<ul class="footer_list">
+			<li><img src="images/foot01.png"><p>主页</p></li>
+			<li><img src="images/foot02.png"><p>分类</p></li>
+            <li><img src="images/发现.png"><p>发现</p></li>
+			<li><img src="images/foot03.png"><p>购物车</p></li>
+			<li><img src="images/foot04.png"><p>我的</p></li>
+		</ul>
+
+
+
+</div>
+
+
+</body>
+</html>

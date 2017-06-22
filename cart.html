@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    
+    <title>购物车</title>
+    <link href="favico.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/base01.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
+    <link href="css/bass.css" rel="stylesheet" type="text/css">
+    <script src="js/cart.js"></script>
+</head>
+<body style="background:#fff;">
+<!--弹出层效果-->
+<div class="mask"></div>
+<div class="qi_sadefct_q" style=""></div>
+<div class="qi_bainbai_paixu">
+	<img src="images/qi_jphyimg.png">
+	<p>金牌会员</p>
+	<p>150元/年</p>
+	<p>
+		1、加入金牌会员立享95折</br>
+		2、每年24次免邮</br>
+		3、15天无理由退换货
+	</p>
+	<input class="qi_xsqjr" type="button" value="立即加入"  onclick="AddVip();"/>
+	<img class="qi_jphygnd" src="images/qi_jphygnd.png">
+</div>
+
+</div>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".jd_safeTip p>a").click(function(){
+			$(".mask").show();
+			$(".qi_bainbai_paixu").css("display","block")
+		$(".qi_bainbai_paixu>img").css("display","block")
+			});		
+		$(".qi_jphygnd").click(function(){
+		$(".qi_sadefct_q").hide();
+		$(".mask").hide();
+		$(".qi_bainbai_paixu").css("display","none")
+		$(".qi_bainbai_paixu>img").css("display","none")
+  });
+  
+});
+
+
+$(document).ready(function(){
+	$(".guanbi").click(function(){
+		$(".jd_safeTip").css("display","none");
+		
+		});
+	
+	});
+
+
+
+</script>
+<!--弹出层结束-->
+    <!--头部  开始-->
+    <header class="jd_topBar">
+    	<a href="#" class="icon_back"></a>
+        <h2 style="background:#fff;">购物车</h2>
+        <a href="#" class="icon_menu"></a>
+    </header>
+    <!--头部 结束-->
+    <div class="jd_view">
+        <div class="jd_safeTip">
+            <p><i><img src="images/qi_gmjphy.png"></i><span>加入金牌会员，全场95折</span><a>立即加入</a><em class="guanbi"><img src="images/qi_jphygb.png"></em></p>
+        </div>
+        <div class="jd_shop">
+            <!--顶部的店铺-->
+            <div class="jd_shop_name">
+                <!--店铺选着框区块-->
+                <div class="shop_check">
+                    <span class="jd_check_box" ></span>
+                </div>
+                <div class="shop_title clearfix">
+                    <span class="name">特购社进口超市</span>
+                    <span class="tip">会员享更多优惠</span>
+                </div>
+            </div>
+            <!--下面商品信息-->
+            <div class="jd_shop_product">
+                <ul>
+                    <li>
+                        <!--商品选着框区块-->
+                        <div class="product_check">
+                        <!--<input type="checkbox" class="checkbox" name="checkbox" value=""> -->
+                            <!--<span class="jd_check_box" checked ></span>-->
+                        </div>
+                        <div class="product_info clearfix">
+                            <a href="#" class="image"><img src="images/1.jpg" alt=""/></a>
+                            <div class="info">
+                                <a href="#" class="name">[澳大利亚] Nature'sCare纳世凯尔皇家蜂胶软胶囊(2000)360粒</a>
+                                <p class="price">¥269.00</p>
+                                <div class="clearfix">
+                                    <!--改变数量-->
+                                    <div class="changeNum clearfix">
+                                        <span class="changeNum_left">-</span>
+                                        <input class="number" type="tel" value="1"/>
+                                        <span class="changeNum_right">+</span>
+                                    </div>
+                                    <!--删除区块-->
+                                    <div class="deleteBox">
+                                        <span class="deleteBox_top"></span>
+                                        <span class="deleteBox_bot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--商品选着框区块-->
+                        <div class="product_check">
+                            <!--<span class="jd_check_box" checked ></span>-->
+                        </div>
+                        <div class="product_info clearfix">
+                            <a href="#" class="image"><img src="images/1.jpg" alt=""/></a>
+                            <div class="info">
+                                <a href="#" class="name">[澳大利亚] Nature'sCare纳世凯尔皇家蜂胶软胶囊(2000)360粒</a>
+                                <p class="price">¥269.00</p>
+                                <div class="clearfix">
+                                    <!--改变数量-->
+                                    <div class="changeNum clearfix">
+                                        <span class="changeNum_left">-</span>
+                                        <input class="number" type="tel" value="1"/>
+                                        <span class="changeNum_right">+</span>
+                                    </div>
+                                    <!--删除区块-->
+                                    <div class="deleteBox">
+                                        <span class="deleteBox_top"></span>
+                                        <span class="deleteBox_bot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="jd_shop">
+            <!--下面商品信息-->
+            <div class="jd_shop_product">
+                <ul>
+                    <li>
+                        <!--商品选着框区块-->
+                        <div class="product_check">
+                            <!--<span class="jd_check_box" checked ></span>-->
+                        </div>
+                        <div class="product_info clearfix">
+                            <a href="#" class="image"><img src="images/1.jpg" alt=""/></a>
+                            <div class="info">
+                                <a href="#" class="name">[澳大利亚] Nature'sCare纳世凯尔皇家蜂胶软胶囊(2000)360粒</a>
+                                <p class="price">¥269.00</p>
+                                <div class="clearfix">
+                                    <!--改变数量-->
+                                    <div class="changeNum clearfix">
+                                        <span class="changeNum_left">-</span>
+                                        <input class="number" type="tel" value="1"/>
+                                        <span class="changeNum_right">+</span>
+                                    </div>
+                                    <!--删除区块-->
+                                    <div class="deleteBox">
+                                        <span class="deleteBox_top"></span>
+                                        <span class="deleteBox_bot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--商品选着框区块-->
+                        <div class="product_check">
+                            <!--<span class="jd_check_box" checked ></span>-->
+                        </div>
+                        <div class="product_info clearfix">
+                            <a href="#" class="image"><img src="images/1.jpg" alt=""/></a>
+                            <div class="info">
+                                <a href="#" class="name">[澳大利亚] Nature'sCare纳世凯尔皇家蜂胶软胶囊(2000)360粒</a>
+                                <p class="price">¥<i id="price">269.00</i></p>
+                                <div class="clearfix">
+                                    <!--改变数量-->
+                                    <div class="changeNum clearfix">
+                                        <span class="changeNum_left">-</span>
+                                        <input class="number" type="tel" value="1"/>
+                                        <span class="changeNum_right">+</span>
+                                    </div>
+                                    <!--删除区块-->
+                                    <div class="deleteBox">
+                                        <span class="deleteBox_top"></span>
+                                        <span class="deleteBox_bot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="jd_option">
+        <!--商品选着框区块-->
+        <div class="option_check">
+        <div id="checkAll">
+        <!--<input type="checkbox" id="checkAll" name="checkbox" value="">-->
+        </div>
+            <!--<span class="jd_check_box" id="checkboxall" checked></span>-->
+            <span class="jd_check_label">全选</span>
+        </div>
+        <div class="option_info">
+            <p class="amount">合计:<span id="num">¥1076.00</span></p>
+            <p class="amount_dec">总额:<span id="numAll">¥1076.00</span>优惠:<span>¥0.00</span></p>
+        </div>
+        <div class="option_submit">
+            <a href="#">去结算(<span class="totalNumber">4</span>)</a>
+        </div>
+    </div>
+
+<!--
+    <div class="jd_win" style="display: none">
+        <div class="jd_win_box">
+            <div class="jd_win_box_con">确认要删除这些商品吗？</div>
+            <div class="jd_win_box_btn clearfix">
+                <a href="" class="cancel">取消</a>
+                <a href="" class="submit">确认</a>
+            </div>
+        </div>
+    </div>-->
+    <script src="js/cart.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script>
+$(function(){
+//获得文本框对象
+var t = $(".number");
+
+//数量增加操作
+$(".changeNum_right").click(function(){
+t.val(parseInt(t.val())+1)
+if (parseInt(t.val())!=1){
+$('.changeNum_left').attr('disabled',false);
+}
+money()
+})
+//数量减少操作
+$(".changeNum_left").click(function(){
+  if (parseInt(t.val())==1){
+$('.minus').attr('disabled',true);
+}else{	
+t.val(parseInt(t.val())-1);
+}
+money()
+})
+function money(){
+	var total=parseInt($(".number").val())*parseFloat($("#price").text())*4;
+	
+			$(".totalNumber").text(t.val()*4);	
+			$("#num").text("￥"+total);
+			$("#numAll").text("￥"+total);
+		}
+
+})
+
+/*单一删除*/
+$(".deleteBox_bot").click(function() {
+	var selected=true;
+     $(".product_check").each(function() {
+        if ($(this).hasClass('oncheck')) {
+            selected = false;
+        }
+    });
+    if (!selected) {
+        alert("请先选择商品");
+        return false;
+    }
+    if (!confirm("你确定要删除选中的商品吗？")) {
+        return false;
+    }
+	$(this).parent().parent().parent().parent().parent().remove();
+});
+<!--单选框-->
+$(".product_check").click(function(){
+	
+    $(this).hasClass("oncheck")? $(this).removeClass("oncheck"):$(this).addClass("oncheck");
+	
+});
+
+<!--全选框-->
+$("#checkAll").click(function() {
+    if ($(this).hasClass("oncheck")) {
+        $(this).removeClass("oncheck");
+          
+    } else {
+        $(this).addClass("oncheck");     
+    }
+});
+
+<!--全选效果-->
+$("#checkAll").click(function(){
+	$(".product_check").hasClass("oncheck")? $(".product_check").removeClass("oncheck"):$(".product_check").addClass("oncheck");	
+	});
+
+$(".product_check").click(function() {
+    /*var checked = $(this).hasClass("oncheck") ? 0 : 1;
+    $(this).toggleClass("oncheck");*/
+    var checkAll = true;
+    $(".product_check").each(function(){
+        if ($(this).hasClass("oncheck")) {
+            checkAll = false;
+        }
+    });
+	if (checkAll) {
+		$("#checkAll").removeClass("oncheck");
+        
+    } else {
+        $("#checkAll").addClass("oncheck");
+    }
+
+ });
+
+
+
+</script>
+</body>
+</html>

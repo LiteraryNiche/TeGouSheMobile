@@ -1,0 +1,63 @@
+a:hover,a:visited,a:link{ color:#545454; text-decoration:none;}
+
+/*top*/
+/*.header { position: relative; z-index: 1; height: 44px; background-size: 100% 44px; border-bottom: 1px solid #BABABA; border-width: 0 0 1px; font-family: 'microsoft yahei', '\534E\6587\7EC6\9ED1', Verdana, Arial, Helvetica, sans-serif; color: #010101; background-color: #FAFAFA; font-size: 16px; min-width: 320px;box-shadow:0 0 3px #BABABA; }
+.header h2 {width:80%; height: 44px; line-height: 44px; font-weight: 600; font-size: 16px; text-align: center; margin:0 10%; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.header .sub_nav_left { position: absolute; left: 0; top: 0;}
+.header .sub_nav_left a{width: 50px; height: 44px;background-image: url(../images/header_lspan_bg.png); background-repeat: no-repeat; background-position: 15px center; background-size:20px 20px; display:block; float:left; }
+.header .sub_nav_left span { height:44px; line-height:44px; font-size:16px; width:80px; display:block; float:left;}
+.header .sub_nav_right { top: 0; right: 0; position: absolute; }
+.header .sub_nav_right a{ display:block; width: 80px; height: 44px; line-height: 44px; text-align:center; }*/
+
+/*header*/
+.i_header { position:fixed; z-index: 10000; height: 44px; background-size: 100% 44px; /*border-bottom: 1px solid #fff; border-width: 0 0 1px;*/ font-family: 'microsoft yahei', '\534E\6587\7EC6\9ED1', Verdana, Arial, Helvetica, sans-serif; color: #fff; background-color:rgba(255,102,153, 1); font-size: 16px; min-width: 100%; /*box-shadow: 0 0 3px #BABABA;*/}
+.i_header .search { height: 44px; line-height: 44px; font-size: 16px; text-align: center; margin-left: 40px; width: 80%;}
+.i_header .search .search_input { height: 30px; line-height: 30px; border: solid 1px #f7f7f7; padding: 0px 5px; width:95%; border-radius:4px; position:relative; top:-2px;}
+.i_header .sub_nav_left { position: absolute; left: 0; top: 0; }
+.i_header .sub_nav_left a { width: 50px; height: 44px; background-image: url(../images/iheader_lspan_bg.png); background-repeat: no-repeat; background-position: 15px center; background-size: 20px 20px; display: block; float: left; }
+.i_header .sub_nav_left span { height: 44px; line-height: 44px; font-size: 16px; width: 80px; display: block; float: left; }
+.i_header .sub_nav_right { top: 0; right: 0; position: absolute; }
+.i_header .sub_nav_right input { display: block; width: 35px; height: 35px; line-height: 44px; text-align: center; margin-top: 5px; }
+
+/*golabl*/
+.item{ width:100%; /*margin-bottom:20px;*/}
+.m20{ height:20px; clear:both;}
+.m25{ height:25px; clear:both;}
+.m30{ height:30px; clear:both;}
+.m40{ height:40px; clear:both;}
+.m50{ height:50px; clear:both;}
+.m60{ height:60px; clear:both;}
+.l{ float:left;}
+.r{ float:right;}
+.rela{ position:relative;}
+.abso{ position:absolute;}
+.clear{ clear:both;}
+.bdr-r{ border-right:solid 1px #f5f5f5;}
+.bdr-l{ border-left:solid 1px #f5f5f5;}
+.bdr-b{ border-bottom:solid 1px #f5f5f5;}
+.bdr-t{ border-top:solid 1px #f5f5f5;}
+/*ad*/
+.ad{ margin-bottom:2px;}
+.ad img{ width:100%; height:auto; overflow:hidden;}
+
+/*banner*/
+.swipe { overflow: hidden; visibility: hidden; position: relative; }
+.swipe-wrap { overflow: hidden; position: relative; }
+.swipe-wrap > figure { float: left; width: 100%; position: relative; }
+#slider { max-width: 650px; margin: 0px auto;  }
+figure { margin: 0; }
+
+
+.tb1{}
+.tb1 th{height:40px; line-height:40px; border-bottom:1px solid #999; border-top:1px solid #999; font-size:16px; padding:5px;}
+.tb1 td{border-bottom:1px solid #999; font-size:12px; padding:5px;}
+.tb1 a{color:#f69; text-decoration:none;}
+.tb1 a:hover{text-decoration:underline;}
+.tb2{}
+.tb2 th{height:30px; line-height:30px; border-bottom:1px solid #999; border-top:1px solid #999; font-size:14px; padding:5px;}
+.tb2 td{border-bottom:1px solid #999; font-size:12px; padding:5px; line-height:35px; color:#666;}
+.tb2 a{color:#f69; text-decoration:none;}
+.tb2 a:hover{text-decoration:underline;}
+
+.clearFix:after { clear: both; display: block; visibility: hidden; height: 0; line-height: 0; content: ''; }
+.clearFix { zoom: 1; } /*解决ie6/7兼容问题*/

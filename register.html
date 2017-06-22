@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--解决uc浏览器字体变大的问题-->
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link href="css/bass.css" rel="stylesheet" type="text/css">
+<title>注册</title>
+<link href="favico.ico" rel="shortcut icon">
+<style>
+* {
+	margin: 0;
+	padding: 0
+}
+body {
+	font-size: 0.4rem;
+}
+.v_logo { max-width: 15rem;
+	height:2.92rem;
+    display: block;
+    text-align: center;
+    margin-top: 0.9rem;
+	margin:auto;
+	background:#fff;
+	}
+.v_logo img {width: 42%;
+    margin: 5% auto 2%;
+    display: block;}
+.box {max-width:15rem; height:13rem;/*box-shadow: 0.06rem 0.06rem 0.06rem #cccccc;*/background-color: #FFFFFF; margin:auto;}
+/*.box1 {width:50%; height:auto; float:left;}
+.box1 img {padding-top:20%; padding-left:0.2rem; width:100%; height:100%;}*/
+#allcontent {
+	/*width:1024px;
+            padding:15px;
+            margin:100px auto 0;
+            border: 1px dashed orange;*/
+			width: 70%;
+	height:auto;
+	margin:auto;
+	position: relative;
+	
+	
+	
+}
+
+span{ width:100%; height:1rem; line-height:1.2rem; font-size:0.56rem; display:block; color:#57473a; text-align:right; }
+span a:visited { text-decoration:none; color:#33cccc;}
+.entry {
+	width: 100%;
+	height: 1.5rem;
+	margin: 1rem 0 0 0;
+	border:0;
+	border-bottom:0.02rem solid gray;
+	display: block;
+}
+.entry input {
+	float: left;
+	display: block;
+	outline: 0;
+	border:1px solid #CCCCCC;
+	width:100%;
+	line-height: 1.5rem;
+	height: 1.5rem;
+	box-sizing:border-box;
+	background:url(images/username.png) no-repeat right center;
+}
+
+.key {
+	width: 100%;
+	height: 1.5rem;
+	margin: 1rem 0 0 0;
+	border:0;
+	border-bottom:0.02rem solid gray;
+	display: block;
+}
+.key input {
+	float: left;
+	display: block;
+	/*outline: 0;*/
+	border:1px solid #CCCCCC;
+	width:100%;
+	line-height: 1.5rem;
+	height: 1.5rem;
+	box-sizing:border-box;
+	background: url(images/password.png) no-repeat right center;
+}
+
+.conform {
+	width:100%;
+	height: 1.5rem;
+	margin: 1rem 0 0 0;
+	border:0;
+	border-bottom:0.02rem solid gray;
+	display: block;
+}
+.conform input {
+	float: left;
+	display: block;
+	line-height: 1.5rem;
+	height:1.5rem;
+	width:100%;
+	border:1px solid #CCCCCC;
+	background: #fff;
+	box-sizing:border-box;
+	background: url(images/password.png) no-repeat right center;
+	
+}
+
+input {
+	width: 10.36rem;
+	height: 1rem;
+	padding-left:3%;
+}
+input:focus{outline:none; border-color:#33cccc;}
+
+.active {
+	background: orange;
+	opacity: 1
+}
+.agr {
+	width: 100%;
+	height: 1.5rem;
+	margin: 1rem 0 0 0;
+	
+}
+.agr .submitBtn {
+	background: #64bdb6;
+	width: 100%;
+	height: 1.5rem;
+	cursor:pointer;
+	color:#fff;
+}
+</style>
+</head>
+
+<body style="background-color:#fff;">
+<div class="v_logo">
+<a href="#"><img src="images/LOGO.png"></a>
+
+</div>
+<div class="box">
+<!--<div class="box1">
+<img src="file:///E|/企业站/images/V.jpg">
+
+</div>-->
+<form id="allcontent">
+ 
+  <span>已有社员账号，请点击<a href="login.html">登录</a></span>
+    <div class="entry">
+      <input type="text" placeholder="请输入您的邮箱/手机号">
+     
+    </div>
+    <div class="key">
+      <input type="password" class="text" placeholder="请设置您的密码"/>
+      
+    </div>
+    <div class="conform">
+      <input type="password" class="text" placeholder="请确认密码">
+     
+    </div>
+    <div class="agr">
+      <input class="submitBtn btn" type="submit" value="同意协议并注册"/>
+    </div>
+</form>
+</div>
+
+</body>
+</html>

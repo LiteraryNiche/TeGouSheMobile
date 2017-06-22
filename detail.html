@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>详情页</title>
+<link href="css/detail.css" rel="stylesheet" type="text/css">
+<link href="css/bass.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="wrap">
+<div class="header fl">
+	<div class="classify fl"><a href="#"><img src="images/fenlei.png" style='width:0.8rem; height:0.8rem;'></a></div>	
+	<div class="header_logo fl"><a href="#"><img src="images/logo_03.png" style='width:3rem; height:1rem;'></a></div>
+    <div class="header_gouwudai fr"><a href="#"><img src="images/gwd.png" style='width:1.12rem; height:1.12rem;'></a></div>
+	<div class="header_sousuo fr"><a href="#"><img src="images/sousuo.png" style='width:1.12rem; height:1.12rem;'></a></div>  
+</div>
+<div class="clear"></div>
+
+<!--菜单列表-->
+<div class="list">
+<div class="list_top">
+<div class="fenlei">
+<p><strong>分类：</strong><span>全部</span><img src="images/qi_img_07.png"></p>
+
+
+</div>
+<div class="paixu">
+<p><i>排序：</i><em>默认</em><img src="images/qi_img_07.png"></p>
+
+
+</div>
+</div>
+<ol class="ol_l">
+<li ><a href="#">全部</a></li>
+<li ><a href="#">冷冻水产</a></li>
+<li ><a href="#">冷冻肉</a></li>
+<li ><a href="#">冷冻半成品</a></li>
+</ol>
+
+<ol class="ol_r">
+<li ><a href="#">默认</a></li>
+<li ><a href="#">销量最高</a></li>
+<li><a href="#">价格最高</a></li>
+<li ><a href="#">价格最低</a></li>
+<li ><a href="#">最新上架</a></li>
+</ol>
+</div>
+
+<script>
+var fenlei=document.getElementsByClassName("fenlei")[0];
+var paixu=document.getElementsByClassName("paixu")[0];
+var ol1=document.getElementsByClassName("ol_l")[0];
+var o_l=window.getComputedStyle(ol1,null);
+var ol2=document.getElementsByClassName("ol_r")[0];
+var o_r=window.getComputedStyle(ol2,null);
+	fenlei.onclick=function(){
+		//console.log(o_l.display);
+		if(o_l.display=="block"){
+			ol1.style.display="none";
+		}
+		else{ol1.style.display="block";
+		ol2.style.display="none";
+		}
+	};
+	
+	paixu.onclick=function(){
+		if(o_r.display=="none"){
+			ol2.style.display="block";
+			}
+			else{
+			ol1.style.display="none";
+			ol2.style.display="none";	
+				
+				}
+		
+		
+		};
+
+
+
+</script>
+
+<!--内容区-->
+<div class="goods">
+   <div class="goods-content">
+    <ul>
+      <li><a href="#" target="_blank"><img src="images/17.jpg"></a> <strong> <a target="_blank" href="#">[美国] 【新品推荐】罗杰斯银鳕鱼500g</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥218.00</span>
+          <p class="goods-sprice">￥213.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/18.jpg"></a> <strong> <a target="_blank" href="#">[格陵兰] 【新品推荐】罗杰斯格陵兰冻比目鱼500g</a></strong>
+      
+        <div class="goods-content-bot"> <span class="goods-nprice">￥79.90</span>
+          <p class="goods-sprice">￥76.90<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/19.jpg"></a> <strong> <a target="_blank" href="#">[越南] 罗杰斯精选龙利鱼（巴沙鱼片）约1.4kg左右</a></strong>
+       
+        <div class="goods-content-bot"> <span class="goods-nprice">￥78.50</span>
+          <p class="goods-sprice">￥76.50<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/20.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="goods-content-bot"> <span class="goods-nprice">￥108.00</span>
+          <p class="goods-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+      <li><a href="#" target="_blank"><img src="images/21.jpg"></a> <strong> <a target="_blank" href="#">[越南] 黑虎虾仁500g</a></strong>
+        
+        <div class="goods-content-bot"> <span class="goods-nprice">￥108.00</span>
+          <p class="goods-sprice">￥105.00<em>最低可达</em></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--底部内容-->
+<div class="footer">
+<div class="footer_top">
+<span class="login"><a href="login.html">登录</a></span>
+<span class="register"><a href="register.html">注册</a></span>
+<span class="back"><a href="#">返回顶部</a></span>
+
+</div>
+<div class="footer_bottom">
+<p>Copyright &copy; 2017 tegoushe.com<br>京ICP证150211号</p>
+</div>
+</div>
+
+
+
+</body>
+</html>
